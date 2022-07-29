@@ -1,0 +1,30 @@
+[{
+
+"bike_type":[
+    "ROAD BIKES",
+    "MOUNTAIN BIKES",
+    "BMX BIKES"
+],
+"type_price":[
+    "$299.00",
+    "$599.00",
+    "$399.00"
+],
+"bike_items":[
+    "GT SENSOR COMP 27.5",
+    "BUTNITZ BICYCLE",
+    "BREEZER SQUALL 1.0",
+    "FUJIE TAHOE 1.5 27.5"
+],
+"bike_type_pics":[
+    "assets/img/products/slid-prod-2.png",
+    "assets/img/products/slid-prod-1.png",
+    "assets/img/products/slid-prod-3.png"
+],
+"bike_items_pic":[
+    "assets/img/products/prod-1.jpg",
+    "assets/img/products/prod-2.jpg",
+    "assets/img/products/prod-3.jpg",
+    "assets/img/products/prod-4.jpg"
+]
+}]

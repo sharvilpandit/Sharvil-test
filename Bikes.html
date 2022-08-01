@@ -399,76 +399,18 @@
             <!-- Bikes Start -->
 
             <!-- Product Slider -->
-            <section class="gst-row row-bikes clear" id="body"> 
+            <section class="gst-row row-bikes clear" > 
                 <div class="products-wrap text-center">  <!---Temporary comment-->
-                    <!-- <div class="fancy-heading text-center">
-                        <h3>Choose Your <span class="thm-clr">Bike</span></h3>
+                    <div class="fancy-heading text-center">
+                         <h3>Choose Your <span class="thm-clr">Bike</span></h3>
                         <h5 class="funky-font-2">Search by type of bike</h5>
                         <i class="thm-clr fsz-20 fa fa-angle-double-down"></i>
                     </div>
 
-                    <!-- Portfolio items --
-                    <div class="products-slider nav-2">
-                        <div class="product">
-                            <div class="product-media">
-                                <img src="assets/img/products/slid-prod-2.png" alt="" />                                                 
-                            </div>
-                            <div class="product-content">
-                                <h3> <a href="single-product.html" class="title-2">ROAD BIKES</a> </h3>
-                                <p class="font-2">Start from <span class="thm-clr"> $299.00 </span> </p>    
-                            </div>
-                        </div>
-
-                        <div class="product">
-                            <div class="product-media">
-                                <img src="assets/img/products/slid-prod-1.png" alt="" />                                                  
-                            </div>
-                            <div class="product-content">
-                                <h3> <a href="single-product.html" class="title-2"> MOUNTAIN BIKES </a> </h3>
-                                <p class="font-2">Start from <span class="thm-clr"> $599.00 </span> </p>    
-                            </div>
-                        </div>
-
-                        <div class="product">
-                            <div class="product-media">
-                                <img src="assets/img/products/slid-prod-3.png" alt="" />
-                            </div>
-                            <div class="product-content">
-                                <h3> <a href="single-product.html" class="title-2">BMX BIKES</a> </h3>
-                                <p class="font-2">Start from <span class="thm-clr"> $399.00 </span> </p>    
-                            </div>
-                        </div>
-
-                        <div class="product">
-                            <div class="product-media">
-                                <img src="assets/img/products/slid-prod-2.png" alt="" />                                                 
-                            </div>
-                            <div class="product-content">
-                                <h3> <a href="single-product.html" class="title-2">ROAD BIKES</a> </h3>
-                                <p class="font-2">Start from <span class="thm-clr"> $299.00 </span> </p>    
-                            </div>
-                        </div>
-
-                        <div class="product">
-                            <div class="product-media">
-                                <img src="assets/img/products/slid-prod-1.png" alt="" />                                                  
-                            </div>
-                            <div class="product-content">
-                                <h3> <a href="single-product.html" class="title-2"> MOUNTAIN BIKES </a> </h3>
-                                <p class="font-2">Start from <span class="thm-clr"> $599.00 </span> </p>    
-                            </div>
-                        </div>
-
-                        <div class="product">
-                            <div class="product-media">
-                                <img src="assets/img/products/slid-prod-3.png" alt="" />
-                            </div>
-                            <div class="product-content">
-                                <h3> <a href="single-product.html" class="title-2">BMX BIKES</a> </h3>
-                                <p class="font-2">Start from <span class="thm-clr"> $399.00 </span> </p>    
-                            </div>
-                        </div>
-                    </div> -->
+                    <!--Portfolio items -->
+                    <div class="products-slider nav-2" id="jsonb_type">
+                       
+                    </div>
 
                     <!-- <a href="#" class="fancy-btn fancy-btn-small fsz-15">View all Bikes</a> -->
                 </div>           
@@ -483,153 +425,19 @@
                             <h3><span class="thm-clr">New</span> Arrivals</h3>
                             <h5 class="funky-font-2">Trending Products</h5>
                         </div>
+                        <div class="clearfix tabs space-15">
+                            <ul class="filtrable products_filter">
+                                <li class=""><a href="#" data-filter=".tab-2">CLOTHING</a></li>
+                                <li class="active"><a href="#" data-filter=".tab-1" >BIKES</a></li>
+                                <li class=""><a href="#" data-filter=".tab-3">COMPONENTS</a></li>                                
+                                <li class=""><a href="#" data-filter=".tab-4" >ACCESSORIES</a></li>
+                                <li class=""><a href="#" data-filter=".tab-5">PROTECTIONS</a></li>
+                            </ul>
+                        </div>
 
                         <!-- Portfolio items -->
                         <div class="row isotope isotope-items" id="product-filter">
-                            <div class="col-md-3 col-sm-6 col-xs-12 isotope-item tab-1 tab-3 tab-5">
-                                <div class="portfolio-wrapper">
-                                    <div class="portfolio-thumb">
-                                        <img src="assets/img/products/prod-1.jpg" alt="">
-                                        <div class="portfolio-content">                                            
-                                            <div class="pop-up-icon">                 
-                                                <a class="center-link" href="#product-preview" data-toggle="modal"><i class="fa fa-search"></i></a>
-                                                <a class="left-link" href="#"><i class="fa fa-heart"></i></a>   
-                                                <a class="right-link" href="#"><i class="cart-icn"> </i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product-content">
-                                        <h3> <a class="title-3 fsz-18" href="#">GT SENSOR COMP 27.5</a> </h3>
-                                        <p class="font-2">Start from <span class="thm-clr"> $299.00 </span> </p>    
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6 col-xs-12 isotope-item tab-1 tab-4 tab-5">
-                                <div class="portfolio-wrapper">
-                                    <div class="portfolio-thumb">
-                                        <img src="assets/img/products/prod-2.jpg" alt="">
-                                        <div class="portfolio-content">                                            
-                                            <div class="pop-up-icon">                 
-                                                <a class="center-link" href="#product-preview" data-toggle="modal"><i class="fa fa-search"></i></a>
-                                                <a class="left-link" href="#"><i class="fa fa-heart"></i></a>   
-                                                <a class="right-link" href="#"><i class="cart-icn"> </i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product-content">
-                                        <h3> <a class="title-3 fsz-18" href="#">BUTNITZ BICYCLE</a> </h3>
-                                        <p class="font-2">Start from <span class="thm-clr"> $299.00 </span> </p>    
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6 col-xs-12 isotope-item tab-1 tab-4 tab-3">
-                                <div class="portfolio-wrapper">
-                                    <div class="portfolio-thumb">
-                                        <img src="assets/img/products/prod-3.jpg" alt="">
-                                        <div class="portfolio-content">                                            
-                                            <div class="pop-up-icon">                 
-                                                <a class="center-link" href="#product-preview" data-toggle="modal"><i class="fa fa-search"></i></a>
-                                                <a class="left-link" href="#"><i class="fa fa-heart"></i></a>   
-                                                <a class="right-link" href="#"><i class="cart-icn"> </i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product-content">
-                                        <h3> <a class="title-3 fsz-18" href="#">BREEZER SQUALL 1.0</a> </h3>
-                                        <p class="font-2">Start from <span class="thm-clr"> $299.00 </span> </p>    
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6 col-xs-12 isotope-item tab-1 tab-3 tab-4">
-                                <div class="portfolio-wrapper">
-                                    <div class="portfolio-thumb">
-                                        <img src="assets/img/products/prod-4.jpg" alt="">
-                                        <div class="portfolio-content">                                            
-                                            <div class="pop-up-icon">                 
-                                                <a class="center-link" href="#product-preview" data-toggle="modal"><i class="fa fa-search"></i></a>
-                                                <a class="left-link" href="#"><i class="fa fa-heart"></i></a>   
-                                                <a class="right-link" href="#"><i class="cart-icn"> </i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product-content">
-                                        <h3> <a class="title-3 fsz-18" href="#">FUJIE TAHOE 1.5 27.5</a> </h3>
-                                        <p class="font-2">Start from <span class="thm-clr"> $299.00 </span> </p>    
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6 col-xs-12 isotope-item tab-2 tab-4 tab-3">
-                                <div class="portfolio-wrapper">
-                                    <div class="portfolio-thumb">
-                                        <img src="assets/img/products/cloth-2.jpg" alt="">
-                                        <div class="portfolio-content">                                            
-                                            <div class="pop-up-icon">                 
-                                                <a class="center-link" href="#product-preview" data-toggle="modal"><i class="fa fa-search"></i></a>
-                                                <a class="left-link" href="#"><i class="fa fa-heart"></i></a>   
-                                                <a class="right-link" href="#"><i class="cart-icn"> </i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product-content">
-                                        <h3> <a class="title-3 fsz-18" href="#">GT SENSOR COMP 27.5</a> </h3>
-                                        <p class="font-2">Start from <span class="thm-clr"> $299.00 </span> </p>    
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6 col-xs-12 isotope-item tab-2 tab-3 tab-5">
-                                <div class="portfolio-wrapper">
-                                    <div class="portfolio-thumb">
-                                        <img src="assets/img/products/cloth-3.jpg" alt="">
-                                        <div class="portfolio-content">                                            
-                                            <div class="pop-up-icon">                 
-                                                <a class="center-link" href="#product-preview" data-toggle="modal"><i class="fa fa-search"></i></a>
-                                                <a class="left-link" href="#"><i class="fa fa-heart"></i></a>   
-                                                <a class="right-link" href="#"><i class="cart-icn"> </i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product-content">
-                                        <h3> <a class="title-3 fsz-18" href="#">BUTNITZ BICYCLE</a> </h3>
-                                        <p class="font-2">Start from <span class="thm-clr"> $299.00 </span> </p>    
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6 col-xs-12 isotope-item tab-2 tab-4 tab-5">
-                                <div class="portfolio-wrapper">
-                                    <div class="portfolio-thumb">
-                                        <img src="assets/img/products/cloth-4.jpg" alt="">
-                                        <div class="portfolio-content">                                            
-                                            <div class="pop-up-icon">                 
-                                                <a class="center-link" href="#product-preview" data-toggle="modal"><i class="fa fa-search"></i></a>
-                                                <a class="left-link" href="#"><i class="fa fa-heart"></i></a>   
-                                                <a class="right-link" href="#"><i class="cart-icn"> </i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product-content">
-                                        <h3> <a class="title-3 fsz-18" href="#">BREEZER SQUALL 1.0</a> </h3>
-                                        <p class="font-2">Start from <span class="thm-clr"> $299.00 </span> </p>    
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6 col-xs-12 isotope-item tab-2 tab-3 tab-4">
-                                <div class="portfolio-wrapper">
-                                    <div class="portfolio-thumb">
-                                        <img src="assets/img/products/cloth-5.jpg" alt="">
-                                        <div class="portfolio-content">                                            
-                                            <div class="pop-up-icon">                 
-                                                <a class="center-link" href="#product-preview" data-toggle="modal"><i class="fa fa-search"></i></a>
-                                                <a class="left-link" href="#"><i class="fa fa-heart"></i></a>   
-                                                <a class="right-link" href="#"><i class="cart-icn"> </i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product-content">
-                                        <h3> <a class="title-3 fsz-18" href="#">FUJIE TAHOE 1.5 27.5</a> </h3>
-                                        <p class="font-2">Start from <span class="thm-clr"> $299.00 </span> </p>    
-                                    </div>
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -643,8 +451,8 @@
                     <h3>Special Offers</h3>
                     <h5 class="funky-font-2">Special price only this month</h5>
                 </div>
-                <div class="special-offers row">
-                    <div class="col-sm-6 col-lg-4">
+                <div class="special-offers row" id="spo">
+                    <!-- <div class="col-sm-6 col-lg-4">
                         <div class="product">
                             <div class="image"><a href="#"><img src="assets/img/products/cat-1.png" alt="Product"></a></div>
                             <div class="right">
@@ -707,7 +515,7 @@
                                 <div class="name"><a href="#">GT SENSOR COMP 27.5</a></div>
                                 <div class="price font-2">Price: <span class="price-new">$299.00</span> <span class="price-old">$599.00</span></div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>

@@ -5100,6 +5100,7 @@ a.compare-add-to-cart:hover, a.compare-add-to-cart:focus{
     background-color: #fff;
     height: 42px;
     text-transform: capitalize;
+    
 }
 .popup-cls:hover{
     opacity: 0.7;

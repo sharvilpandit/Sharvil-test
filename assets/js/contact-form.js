@@ -5,7 +5,7 @@ let cmsg=document.getElementById("cf_message");
 submit=document.getElementById("submit");
 cform.addEventListener("submit",validate,false)
 
-function validate(){
+function validate(cevent){
     cname.addEventListener("keypress",()=>{
     if(cname===''){
         validate();
@@ -30,7 +30,7 @@ function validate(){
             document.getElementById("cmsg").innerHTML=""; 
         }
         })
-            event.preventDefault();
+            cevent.preventDefault();
         if(cname.value===''){
             document.getElementById("cname").innerHTML="Pls. Enter Name";
            }
@@ -47,9 +47,9 @@ function validate(){
            else if(cname!=='' || cmail.value!=='' || cmsg.value!==''){
            
            let msg=document.createElement("p");
-           let size=document.createElement("h2  ")
+           let size=document.createElement("h2")
            msg.setAttribute("class","text-success")
-           msg.innerHTML="Success";
+           msg.innerHTML="Message Sent Succesfully";
             size.appendChild(msg)
            document.getElementById("smsg").appendChild(size);
            }

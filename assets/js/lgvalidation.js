@@ -3,9 +3,9 @@ let lgpwd=document.getElementById('lgpwd');
 let lgmail=document.getElementById("lgmail");
 submit=document.getElementById("submit");
 form.addEventListener("submit",validate,false);
-console.log("lg")
+
 function validate(lgevent){
-    console.log("scess")
+  
     lgmail.addEventListener("keypress",()=>{
         if(lgmail===''){
             validate();

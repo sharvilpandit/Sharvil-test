@@ -165,7 +165,7 @@
                             <a  href="#login-popup" data-toggle="modal">Login</a>
                         </li>
                         <li class="menu-item">
-                            <a  href="#login-popup" data-toggle="modal">Registration</a>
+                            <a  href="#Reg-popup" data-toggle="modal">Registration</a>
                         </li>
                     </ul>
 
@@ -224,9 +224,9 @@
                                             </li>  -->
                                             <li><a href="index.html">Home</a></li>
                                             <li><a href="Bikes.html">Bikes</a></li>
-                                            <!-- <li class="dropdown mega-dropdown"> -->
-                                                <!-- <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" >Clothing</a>                                             -->
-                                                <!-- <div class="dropdown-menu mega-dropdown-menu mega-styl2"  style="background: white no-repeat url(assets/img/extra/megamenu-2.jpg) right 25px center; ">
+                                            <!-- <li class="dropdown mega-dropdown"> 
+                                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" >Clothing</a>                                            
+                                                 <div class="dropdown-menu mega-dropdown-menu mega-styl2"  style="background: white no-repeat url(assets/img/extra/megamenu-2.jpg) right 25px center; ">
                                                     <div class="col-sm-6 menu-block">
                                                         <div class="sub-list">                                                           
                                                             <h2 class="blk-clr title">                                                                
@@ -246,7 +246,7 @@
                                                 </div>
                                             </li> 
                                             <li class="dropdown mega-dropdown">
-                                                <!-- <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" >Components</a>                                             -->
+                                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" >Components</a>-->
 
                                                 <div class="dropdown-menu mega-dropdown-menu pr"  style="background: white no-repeat url(assets/img/extra/megamenu-1.jpg) right top; ">
                                                     <div class="col-md-3 col-sm-3 menu-block">
@@ -409,17 +409,21 @@
                             <div class="contact-form">
                                 <div class="form-group col-sm-6">
                                     <input type="text" class="form-control name input-your-name" placeholder="Your Name" name="cf_name" id="cf_name" value="" data-toggle="tooltip" data-placement="bottom"  title="Name is required">
+                                    <p id="cname" class="text-danger"></p>
                                 </div>
                                 <div class="form-group col-sm-6">
                                     <input type="text" class="form-control email input-email" placeholder="Email Address" name="cf_email" id="cf_email" value="" data-toggle="tooltip" data-placement="bottom"  title="Email is required">
+                                    <p id="cmail" class="text-danger"></p>
                                 </div>
                                 <div class="form-group col-sm-12">
                                     <textarea class="form-control message input-message" rows="8" cols="10" placeholder="Your Massage" name="cf_message" id="cf_message" data-toggle="tooltip" data-placement="top"  title="Message is required"></textarea>
                                 </div>
+                                <p id="cmsg" class="text-danger"></p>
                             </div>
                             <div class="form-group col-sm-12 text-center">
-                                <button type="submit" class="alt fancy-button">Send Now</button>
+                                <button type="submit" class="alt fancy-button" id="submit">Send Now</button>
                             </div>
+                            <div id="smsg"></div>
                         </form>
                     </div>
 
@@ -595,13 +599,15 @@
                         <div class="login-form">
                             <a class="fb-btn btn spcbtm-15" href="#"> <i class="fa fa-facebook btn-icon"></i>Login with Facebook </a>
 
-                            <p class="bold-font-2 fsz-12 signup"> OR SIGN UP </p>
+                            <p class="bold-font-2 fsz-12 signup"> OR </p>
 
-                            <form class="login">
-                                <div class="form-group"><input type="text" placeholder="Email" class="form-control"></div>
-                                <div class="form-group"><input type="text" placeholder="Password" class="form-control"></div>
+                            <form name='login' id="lgin" class="login">
+                                <div class="form-group"><input type="text" id="lgmail" placeholder="Email" class="form-control">
+                                    <span id="lgmailerror" class="text-danger"></span></div>
+                                <div class="form-group"><input type="text" id="lgpwd" placeholder="Password" class="form-control">
+                                    <span id="lgpwderror" class="text-danger"></span></div>
                                 <div class="form-group">
-                                    <button class="alt fancy-button" type="submit"> <span class="fa fa-lightbulb-o"></span> Login</button>
+                                    <button class="alt fancy-button" type="submit" id="submit"> <span class="fa fa-lightbulb-o"></span> Login</button>
                                 </div>
                             </form>
 
@@ -613,6 +619,54 @@
             </div>
         </div>
         <!-- /Popup: Login 1 --> 
+
+        <!-- Popup: Registration 1 -->
+        <div class="modal fade login-popup" id="Reg-popup" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-lg">                
+                <button type="button" class="close close-btn popup-cls" data-dismiss="modal" aria-label="Close"> <i class="fa-times fa"></i> </button>
+
+                <div class="modal-content login-1 wht-clr">   
+                    <div class="login-wrap text-center">                        
+                         <h2 class="fsz-20 spcbtm-15"> <span class="bold-font-3 wht-clr">GoShop</span> <span class="thm-clr funky-font">fashion</span> </h2>
+                        <!--<p class="fsz-10 title-3"> WELCOME TO OUR  WONDERFUL WORLD </p>
+                        <p class="fsz-10 bold-font-4"> Did you know that we ship to over <span class="thm-clr"> 24 different countries </span> </p>      -->
+                        <div class="login-form">
+                            <!-- <a class="fb-btn btn spcbtm-15" href="#"></a> -->
+                            <form name="registration" id="reg" class="login">
+                                <div class="form-group"><input type="text" id="name"  placeholder="Name" class="form-control text-dark">
+                                <span id="namerror" class="text-danger"></span></div>
+                                <div class="form-group"><input type="email" id="mail" placeholder="Email" class="form-control text-dark">
+                                    <span id="mailerror" class="text-danger"></span></div>
+                                <div class="form-group"><input type="text" id="pwd" placeholder="Password" class="form-control text-dark">
+                                    <span id="pwderror" class="text-danger"></span></div>
+                                <div class="form-group">Country:
+                                    <select class="form-control text-dark" id="nation" style="color:black;">
+                                    <option class="text-dark" value=''>Select</option>
+                                    <option class="text-dark" value="India">India</option>
+                                    <option class="text-dark" value="USA">UNITED STATES</option>
+                                    <option class="text-dark" value="Canada">CANADA</option></select> 
+                                    <p><span id="ctrerror" class="text-danger"></span></p>   
+                                </div> 
+                                <div class="form-check">Gender:
+                                    <input type="radio"  class="form-check-input" name="gender" id="male" value="male">male
+                                    <input type="radio"  class="form-check-input" name="gender" id="female" value="female">female
+                                    <p><span id="generror" class="text-danger"></span></p></div>
+
+                                    <div class="form-check"><input type="checkbox" value="1" id="tc"><span style="margin-left: 8px;">I Accept t&c</span>
+                                    <p><span id="tcerror" class="text-danger"></span></p></div>
+                                
+                                <div class="form-group">
+                                    <button class="alt fancy-button" type="submit" id="submit"> <span class="fa fa-lightbulb-o"></span> Register</button>
+                                </div>
+                            </form>
+
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Popup: Registration 1 --> 
 
         <!-- Top -->
         <div class="to-top" id="to-top"> <i class="fa fa-long-arrow-up"></i> </div>
@@ -630,5 +684,9 @@
         <script src="assets/js/jquery.sticky.js"></script>
         <script src="assets/js/custom.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+        <script src="assets/js/validation.js"></script>
+        <script src="assets/js/lgvalidation.js"></script>
+        <script src="assets/js/cval.js"></script>
+
     </body>
 </html>

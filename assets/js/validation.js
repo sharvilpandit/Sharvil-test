@@ -7,7 +7,7 @@ let terms=document.getElementById("tc");
 let submit=document.getElementById("submit");
 let tc=document.getElementById("tc");
 form.addEventListener("submit",validate,false);
-console.log("hello")
+
 function validate(event){
    
    

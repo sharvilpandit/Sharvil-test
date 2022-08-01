@@ -165,7 +165,7 @@
                             <a  href="#login-popup" data-toggle="modal">Login</a>
                         </li>
                         <li class="menu-item">
-                            <a  href="#login-popup" data-toggle="modal">Registration</a>
+                            <a  href="#Reg-popup" data-toggle="modal">Registration</a>
                         </li>
                     </ul>
 
@@ -661,13 +661,15 @@
                         <div class="login-form">
                             <a class="fb-btn btn spcbtm-15" href="#"> <i class="fa fa-facebook btn-icon"></i>Login with Facebook </a>
 
-                            <p class="bold-font-2 fsz-12 signup"> OR SIGN UP </p>
+                            <p class="bold-font-2 fsz-12 signup"> OR </p>
 
-                            <form class="login">
-                                <div class="form-group"><input type="text" placeholder="Email" class="form-control"></div>
-                                <div class="form-group"><input type="text" placeholder="Password" class="form-control"></div>
+                            <form name='login' id="lgin" class="login">
+                                <div class="form-group"><input type="text" id="lgmail" placeholder="Email" class="form-control">
+                                    <span id="lgmailerror" class="text-danger"></span></div>
+                                <div class="form-group"><input type="text" id="lgpwd" placeholder="Password" class="form-control">
+                                    <span id="lgpwderror" class="text-danger"></span></div>
                                 <div class="form-group">
-                                    <button class="alt fancy-button" type="submit"> <span class="fa fa-lightbulb-o"></span> Login</button>
+                                    <button class="alt fancy-button" type="submit" id="submit"> <span class="fa fa-lightbulb-o"></span> Login</button>
                                 </div>
                             </form>
 
@@ -679,6 +681,54 @@
             </div>
         </div>
         <!-- /Popup: Login 1 --> 
+
+        <!-- Popup: Registration 1 -->
+        <div class="modal fade login-popup" id="Reg-popup" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-lg">                
+                <button type="button" class="close close-btn popup-cls" data-dismiss="modal" aria-label="Close"> <i class="fa-times fa"></i> </button>
+
+                <div class="modal-content login-1 wht-clr">   
+                    <div class="login-wrap text-center">                        
+                         <h2 class="fsz-20 spcbtm-15"> <span class="bold-font-3 wht-clr">GoShop</span> <span class="thm-clr funky-font">fashion</span> </h2>
+                        <!--<p class="fsz-10 title-3"> WELCOME TO OUR  WONDERFUL WORLD </p>
+                        <p class="fsz-10 bold-font-4"> Did you know that we ship to over <span class="thm-clr"> 24 different countries </span> </p>      -->
+                        <div class="login-form">
+                            <!-- <a class="fb-btn btn spcbtm-15" href="#"></a> -->
+                            <form name="registration" id="reg" class="login">
+                                <div class="form-group"><input type="text" id="name"  placeholder="Name" class="form-control text-dark">
+                                <span id="namerror" class="text-danger"></span></div>
+                                <div class="form-group"><input type="email" id="mail" placeholder="Email" class="form-control text-dark">
+                                    <span id="mailerror" class="text-danger"></span></div>
+                                <div class="form-group"><input type="text" id="pwd" placeholder="Password" class="form-control text-dark">
+                                    <span id="pwderror" class="text-danger"></span></div>
+                                <div class="form-group">Country:
+                                    <select class="form-control text-dark" id="nation" style="color:black;">
+                                    <option class="text-dark" value=''>Select</option>
+                                    <option class="text-dark" value="India">India</option>
+                                    <option class="text-dark" value="USA">UNITED STATES</option>
+                                    <option class="text-dark" value="Canada">CANADA</option></select> 
+                                    <p><span id="ctrerror" class="text-danger"></span></p>   
+                                </div> 
+                                <div class="form-check">Gender:
+                                    <input type="radio"  class="form-check-input" name="gender" id="male" value="male">male
+                                    <input type="radio"  class="form-check-input" name="gender" id="female" value="female">female
+                                    <p><span id="generror" class="text-danger"></span></p></div>
+
+                                    <div class="form-check"><input type="checkbox" value="1" id="tc"><span style="margin-left: 8px;">I Accept t&c</span>
+                                    <p><span id="tcerror" class="text-danger"></span></p></div>
+                                
+                                <div class="form-group">
+                                    <button class="alt fancy-button" type="submit" id="submit"> <span class="fa fa-lightbulb-o"></span> Register</button>
+                                </div>
+                            </form>
+
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Popup: Registration 1 --> 
 
         <!-- Top -->
         <div class="to-top" id="to-top"> <i class="fa fa-long-arrow-up"></i> </div>
@@ -695,5 +745,8 @@
         <!-- Page JS -->      
         <script src="assets/js/jquery.sticky.js"></script>
         <script src="assets/js/custom.js"></script>
+        <script src="assets/js/validation.js"></script>
+        <script src="assets/js/lgvalidation.js"></script>
+
     </body>
 </html>

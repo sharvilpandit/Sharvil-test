@@ -23,8 +23,8 @@ function compare() {
     if (a1.length === a2.length) {
         console.log('length matched');
         const result = JSON.stringify(a1) == JSON.stringify(a2);
-        console.log(JSON.stringify(a1));
-        console.log(JSON.stringify(a2));
+        // console.log(JSON.stringify(a1));
+        // console.log(JSON.stringify(a2));
         if (result) {
             console.log('Arrays matched');
         } else {
@@ -44,9 +44,8 @@ for (let i = 0; i < spar.length; i += chunkSize) {
 //task-5
 let a1 = [5, 10, 15, 20, 25];
 let a2 = [5, 10, 15, 20, 25, 30, 60, 90];
-let a3 = [];
-a3 = a1.concat(a2);
-console.log(a3, 'cloned');
+a1 = [...a2];
+console.log(a1, 'cloned');
 
 //task-6
 
